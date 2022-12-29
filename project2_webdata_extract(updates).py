@@ -14,7 +14,7 @@ import schedule
 pd.set_option('display.max_columns', None)
 
 def run_on_schedule():
-    url= "https://prod.uhrs.playmsn.com/uhrs/"
+    url= "****"
 
     chrome_option = webdriver.ChromeOptions()
     chrome_option.add_argument("--incognito")
@@ -28,14 +28,14 @@ def run_on_schedule():
     driver.find_element(By.XPATH, '//span[@class="ms-Button-flexContainer flexContainer-45"]').click()
 
 
-    WebDriverWait(driver, 30).until(EC.element_to_be_clickable((By.XPATH, '//input[@id="i0116"]'))).send_keys("carmella.sanica001@outlook.com")
+    WebDriverWait(driver, 30).until(EC.element_to_be_clickable((By.XPATH, '//input[@id="i0116"]'))).send_keys("****")
     WebDriverWait(driver, 30).until(EC.element_to_be_clickable((By.XPATH, '//input[@id="idSIButton9"]'))).click()
     #driver.find_element(By.XPATH, '//input[@id="i0116"]').send_keys("marcus.garay010@outlook.com")
     #driver.find_element(By.XPATH, '//input[@id="idSIButton9"]').click()
     time.sleep(8)
-    WebDriverWait(driver, 30).until(EC.element_to_be_clickable((By.XPATH, '//input[@id="i0118"]'))).send_keys("Bing@12345")
+    WebDriverWait(driver, 30).until(EC.element_to_be_clickable((By.XPATH, '//input[@id="i0118"]'))).send_keys("****")
     WebDriverWait(driver, 30).until(EC.element_to_be_clickable((By.XPATH, '//input[@id="idSIButton9"]'))).click()
-    #driver.find_element(By.XPATH, '//input[@id="i0118"]').send_keys("Bing@12354")
+    #driver.find_element(By.XPATH, '//input[@id="i0118"]').send_keys("****")
     #driver.find_element(By.XPATH, '//input[@id="idSIButton9"]').click()
 
 
@@ -184,7 +184,7 @@ def run_on_schedule():
 
 
     try:
-        conn = mysql.connect(host='localhost', database='uhrs', user='root', password='')
+        conn = mysql.connect(host='localhost', database='****', user='****', password='')
         if conn.is_connected():
             cursor = conn.cursor()
             cursor.execute("select database();")
